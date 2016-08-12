@@ -1,0 +1,6 @@
+.idea/
+target/
+DesignPatterns.iml
+pom.xml
+src/test
+src/main/resources
