@@ -8,7 +8,7 @@ package Bridge;
 
 public class DVDDevice extends EntertainmentDevice {
 
-    public DVDDevice(int newDeviceState, int newMaxSetting){
+    public DVDDevice(int newDeviceState, int newMaxSetting) {
 
         super.deviceState = newDeviceState;
 
@@ -32,5 +32,8 @@ public class DVDDevice extends EntertainmentDevice {
 
     }
 
-
+    @Override
+    public void deviceFeedback() {
+        System.out.println("On Chapter " + deviceState);
+    }
 }

@@ -35,6 +35,7 @@ public class TestTheRemote{
         theDVD.buttonSixPressed();
         theDVD.buttonNinePressed();
         theDVD.buttonNinePressed();
+        theDVD.deviceFeedback();
 
     }
 
