@@ -43,7 +43,7 @@ public class DiscJockey {
         // collections everything must be handled on an individual
         // basis. This is BAD!
 
-        ArrayList aL70sSongs = songs70s.getBestSongs();
+        ArrayList<?> aL70sSongs = songs70s.getBestSongs();
 
         System.out.println("Songs of the 70s\n");
 
@@ -94,9 +94,9 @@ public class DiscJockey {
 
         System.out.println("NEW WAY WITH ITERATOR\n");
 
-        Iterator Songs70s = iter70sSongs.createIterator();
-        Iterator Songs80s = iter80sSongs.createIterator();
-        Iterator Songs90s = iter90sSongs.createIterator();
+        Iterator<?> Songs70s = iter70sSongs.createIterator();
+        Iterator<?> Songs80s = iter80sSongs.createIterator();
+        Iterator<?> Songs90s = iter90sSongs.createIterator();
 
         System.out.println("Songs of the 70s\n");
         printTheSongs(Songs70s);
@@ -109,7 +109,7 @@ public class DiscJockey {
 
     }
 
-    public void printTheSongs(Iterator iterator){
+    public void printTheSongs(Iterator<?> iterator){
 
         while(iterator.hasNext()){
 

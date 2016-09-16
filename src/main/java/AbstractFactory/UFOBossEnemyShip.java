@@ -25,8 +25,6 @@ public class UFOBossEnemyShip extends EnemyShip{
 
     void makeShip() {
 
-        // TODO Auto-generated method stub
-
         System.out.println("Making enemy ship " + getName());
 
         // The specific weapon & engine needed were passed in

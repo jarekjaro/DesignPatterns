@@ -16,7 +16,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
-public class FlyWeightTest extends JFrame{
+public class FlyweightTest extends JFrame{
 
     private static final long serialVersionUID = 1L;
 
@@ -33,11 +33,11 @@ public class FlyWeightTest extends JFrame{
 
     public static void main(String[] args){
 
-        new FlyWeightTest();
+        new FlyweightTest();
 
     }
 
-    public FlyWeightTest(){
+    public FlyweightTest(){
 
         // Create the frame, position it and handle closing it
 

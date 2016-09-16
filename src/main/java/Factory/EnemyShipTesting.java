@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class EnemyShipTesting {
 
-    public static void main(String[] args){
+    private static Scanner userInput;
+
+	public static void main(String[] args){
 
         // Create the factory object
         EnemyShipFactory shipFactory = new EnemyShipFactory();
@@ -13,7 +15,7 @@ public class EnemyShipTesting {
 
         EnemyShip theEnemy = null;
 
-        Scanner userInput = new Scanner(System.in);
+        userInput = new Scanner(System.in);
 
         System.out.print("What type of ship? (U / R / B)");
 

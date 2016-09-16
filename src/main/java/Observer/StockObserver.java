@@ -25,7 +25,7 @@ public class StockObserver implements Observer {
         // Store the reference to the stockGrabber object so
         // I can make calls to its methods
 
-        this.stockGrabber = stockGrabber;
+        this.setStockGrabber(stockGrabber);
 
         // Assign an observer ID and increment the static counter
 
@@ -59,5 +59,13 @@ public class StockObserver implements Observer {
                 aaplPrice + "\nGOOG: " + googPrice + "\n");
 
     }
+
+	public Subject getStockGrabber() {
+		return stockGrabber;
+	}
+
+	public void setStockGrabber(Subject stockGrabber) {
+		this.stockGrabber = stockGrabber;
+	}
 
 }

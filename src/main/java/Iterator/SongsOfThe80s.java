@@ -46,7 +46,7 @@ public class SongsOfThe80s implements SongIterator{
     // NEW By adding this method I'll be able to treat all
     // collections the same
 
-    public Iterator createIterator() {
+    public Iterator<SongInfo> createIterator() {
         return Arrays.asList(bestSongs).iterator();
     }
 

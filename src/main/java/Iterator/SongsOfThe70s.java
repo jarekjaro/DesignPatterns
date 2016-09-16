@@ -42,8 +42,7 @@ public class SongsOfThe70s implements SongIterator{
     // NEW By adding this method I'll be able to treat all
     // collections the same
 
-    public Iterator createIterator() {
-        // TODO Auto-generated method stub
+    public Iterator<SongInfo> createIterator() {
         return bestSongs.iterator();
     }
 

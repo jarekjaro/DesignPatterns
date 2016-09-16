@@ -8,9 +8,11 @@ public class EnemyShipFactory {
     // This could be used as a static method if we
     // are willing to give up subclassing it
 
-    public EnemyShip makeEnemyShip(String newShipType) {
+    private EnemyShip newShip;
 
-        EnemyShip newShip = null;
+	public EnemyShip makeEnemyShip(String newShipType) {
+
+        setNewShip(null);
 
         if (newShipType.equals("U")) {
 
@@ -27,5 +29,13 @@ public class EnemyShipFactory {
         } else return null;
 
     }
+
+	public EnemyShip getNewShip() {
+		return newShip;
+	}
+
+	public void setNewShip(EnemyShip newShip) {
+		this.newShip = newShip;
+	}
 
 }
